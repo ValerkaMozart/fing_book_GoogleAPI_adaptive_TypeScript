@@ -1,0 +1,36 @@
+.Pages {
+  display: flex;
+  width: 90%;
+  margin: 30px auto 40px auto;
+  justify-content: center;
+  align-items: center;
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      padding: 5px;
+      border-radius: 6px;
+      background: rgba(0, 202, 255, 0.9);
+      transition: all .4s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+     & {
+       display: none;
+
+     }
+  }
+}
